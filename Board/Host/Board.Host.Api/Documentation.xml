@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Board.Host.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Board.Host.Api.Controllers.PostsController">
+            <summary>
+            контроллер для работы с объявлениями
+            </summary>
+        </member>
+        <member name="M:Board.Host.Api.Controllers.PostsController.#ctor(Microsoft.Extensions.Logging.ILogger{Board.Host.Api.Controllers.PostsController},Board.Application.Appdata.Posts.Services.IPostService)">
+            <summary>
+            инициализация экземпляра <see cref="T:Board.Host.Api.Controllers.PostsController"/>
+            </summary>
+            <param name="logger">Сервис логирования</param>
+            <param name="postService">Сервис для работы с объявлениями</param>
+        </member>
+        <member name="M:Board.Host.Api.Controllers.PostsController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Board.Host.Api.Controllers.PostsController.CreatePost(Board.Contracts.Posts.CreatePostDto,System.Threading.CancellationToken)">
+            <summary>
+            сохраняет новое объявление
+            </summary>
+            <param name="dto"></param>
+            <param name="cancellation">Токен отмены операции</param>
+            <returns>модель созданного объявления</returns>
+        </member>
+    </members>
+</doc>

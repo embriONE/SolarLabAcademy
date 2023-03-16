@@ -6,4 +6,15 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Comments" />
+      <Folder Include="Favorites" />
+      <Folder Include="Users\Repositories" />
+      <Folder Include="Users\Services" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Contracts\Board.Contracts\Board.Contracts.csproj" />
+    </ItemGroup>
+
 </Project>
