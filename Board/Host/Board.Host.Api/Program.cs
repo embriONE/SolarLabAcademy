@@ -1,4 +1,6 @@
+using Board.Application.Appdata;
 using Board.Application.Appdata.Posts.Services;
+using Board.Contracts;
 using Board.Contracts.Posts;
 using Microsoft.OpenApi.Models;
 
@@ -6,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<IPostService, PostService>();
+builder.Services.AddScoped<IBadWordsService, BadWordsService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
