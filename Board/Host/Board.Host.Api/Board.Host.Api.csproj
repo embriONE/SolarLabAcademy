@@ -5,6 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DocumentationFile>Documentation.xml</DocumentationFile>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
@@ -19,8 +20,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="D ocumentation.xml" />
-      <Content Include="D ocumentation.xml">
+      <None Remove="Documentation.xml" />
+      <Content Include="..\..\..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+      <Content Include="Documentation.xml">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
     </ItemGroup>
